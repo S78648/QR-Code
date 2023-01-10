@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>QR Code</title>
+  <style>
+    @media (max-width:375px) {
+      .panel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100vw;
+        height:100vh;
+        background-color: hsl(212, 45%, 89%);
+      }
+      body{
+        display:none;
+      }
+    }
+   body{
+      background-image:url("./panel.png");
+      background-size: cover;
+      font-family:'Outfit',sans-serif;
+      display:flex;
+      justify-content: center;
+
+   }
+   p{
+     font-size:9px;
+     color:hsl(220, 15%, 55%);
+   }
+   h1{
+     font-size:13px;
+   }
+
+   img{
+     width:180px;
+     aspect-ratio:1/1;
+     margin:10px 0 0 10px;
+     border-radius: 10px;
+   }
+   .main{
+     width:200px;
+     height:310px;
+     background-color: hsl(0, 0%, 100%);
+     border-radius: 10px;
+   }
+   .panel{
+     display:flex;
+     justify-content:center;
+     align-items: center;
+     width:1000px;
+     aspect-ratio:2/1;
+     background-color: hsl(212, 45%, 89%);
+     margin-top:30px;
+     box-shadow: 1px 1px 20px grey;
+
+   }
+    article{
+      width:150px;
+      text-align: center;
+      margin-left: 23px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="panel">
+  <div class="main">
+    <img src="./images/image-qr-code.png">
+    <article>
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skill to the next level</p>
+    </article>
+  </div>
+</div>
+</body>
+</html>
